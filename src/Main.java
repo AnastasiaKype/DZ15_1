@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        boolean isGreenLight = false;
+        boolean isGreenLight = true;
 
         int speedOfPlayer1 = 5;
-        int speedOfPlayer2 = 2;
-        int speedOfPlayer3 = 3;
+        int speedOfPlayer2 = 0;
+        int speedOfPlayer3 = 2;
 
         int numbersOfPlayers = 0;
 
@@ -14,6 +14,7 @@ public class Main {
         } else {
             if (speedOfPlayer1 > 0) {
                 numbersOfPlayers = numbersOfPlayers + 1;
+
             }
             if (speedOfPlayer2 > 0) {
                 numbersOfPlayers = numbersOfPlayers + 1;
