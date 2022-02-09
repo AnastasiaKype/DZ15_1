@@ -1,29 +1,14 @@
+import static kype.nastya.DZ16.speedCheck;
+
 public class Main {
     public static void main(String[] args) {
-        boolean isGreenLight = true;
-
-        int speedOfPlayer1 = 5;
-        int speedOfPlayer2 = 0;
-        int speedOfPlayer3 = 2;
-
-        int numbersOfPlayers = 0;
-
-        if (isGreenLight == true) {
-
-            System.out.println("Выбывших: " + numbersOfPlayers);
-        } else {
-            if (speedOfPlayer1 > 0) {
-                numbersOfPlayers = numbersOfPlayers + 1;
-
-            }
-            if (speedOfPlayer2 > 0) {
-                numbersOfPlayers = numbersOfPlayers + 1;
-            }
-            if (speedOfPlayer3 > 0) {
-                numbersOfPlayers = numbersOfPlayers + 1;
-            }
-            System.out.println("Выбывших: " + numbersOfPlayers);
-        }
+        String player1 = speedCheck(5);
+        System.out.println("Игрок 1 - " + player1);
+        String player2 = speedCheck(0);
+        System.out.println("Игрок 2 - " + player2);
+        String player3 = speedCheck(2);
+        System.out.println("Игрок 3 - " + player3);
     }
+
 }
 
